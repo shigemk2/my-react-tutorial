@@ -7,6 +7,7 @@ var CommentBox = React.createClass({
   getInitialState: function() {
     return {data: []};
   },
+  // componentDidMount はコンポーネントがレンダリングされたときに React が自動的に呼び出すメソッド
   componentDidMount: function() {
     $.ajax({
       url: this.props.url,
